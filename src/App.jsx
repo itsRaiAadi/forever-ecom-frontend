@@ -5,22 +5,23 @@ import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-
 import Footer from "./components/Footer";
+import { HomePageProvider } from "./context/HomePageContext";
 
 const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-5 mb-5">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-      <Footer />
-    </div>
+    <HomePageProvider>
+      <div className="flex flex-col items-center justify-center mt-5 mb-5">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </HomePageProvider>
   );
 };
 

@@ -14,7 +14,9 @@ const EmailSection = () => {
           placeholder="Enter your email id"
           className="border-r-0 border-t border-l border-b outline-none p-2"
         />
-        <span className=" p-2.5 bg-black text-white  ">SUBSCRIBE</span>
+        <button className=" p-2.5 bg-black text-white cursor-pointer">
+          SUBSCRIBE
+        </button>
       </div>
     </div>
   );
