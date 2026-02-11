@@ -26,12 +26,12 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <p className="font-semibold">GET IN TOUCH</p>
             <p>+1-212-456-7890</p>
-            <p>greatstackdev@gmail.com</p>
+            <p>aditya.dev@gmail.com</p>
           </div>
         </div>
       </div>
       <hr className="w-full" />
-      <div className="mb-8">
+      <div>
         <p>Copyright 2024 © AdityaRai.dev - All Right Reserved.</p>
       </div>
     </div>
